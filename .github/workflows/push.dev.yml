@@ -9,5 +9,9 @@ jobs:
   push-dev:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Print
+        run: |
           echo "Log: develop branch"
