@@ -1,0 +1,15 @@
+name: Triggered by push dev event
+
+on:
+  workflow_run:
+    workflows: [Push development branch]
+    branches: [develop]
+    types:
+      - completed
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Workflow_run happens"

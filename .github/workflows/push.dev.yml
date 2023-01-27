@@ -1,0 +1,13 @@
+name: Push development branch
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Log: develop branch"
