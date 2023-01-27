@@ -8,7 +8,7 @@ on:
       - completed
 
 jobs:
-  print:
+  workflow-run:
     runs-on: ubuntu-latest
     steps:
       - run: |
